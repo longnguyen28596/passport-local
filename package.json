@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node app/index.js"
   },
   "keywords": [
     "blog"
@@ -12,8 +13,22 @@
   "author": "Nguyen Hoan Long",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "mongoose": "^5.8.4"
+    "express-ejs-extend": "0.0.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.8.5",
+    "mongoose-data-seed": "^2.1.6",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "mdSeed": {
+    "seedersFolder": "./app/seeders"
   }
 }
